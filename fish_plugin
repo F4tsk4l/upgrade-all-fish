@@ -1,0 +1,3 @@
+name: upgrade-all
+description: A Fish function to upgrade multiple package managers
+homepage: https://github.com/F4tsk4l/upgrade-all-fish
