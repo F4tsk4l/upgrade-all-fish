@@ -11,6 +11,7 @@ function upgrade-all
             case -A
                 echo "Full upgrade selected (Pacman, Yay, Ya(Yazi), Fisher, Cargo, Nvim_Plugins, Pipx)"
                 sudo pacman -Syud --noconfirm
+                and su g4m3r
                 and yay -a -Su --noconfirm
                 and ya pkg upgrade
                 and fisher update
