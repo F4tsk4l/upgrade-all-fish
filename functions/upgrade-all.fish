@@ -9,10 +9,10 @@ function upgrade-all
     if set -q argv[1]
         switch "$argv[1]"
             case -A
-                echo "Full upgrade selected (Pacman, Yay, Ya(Yazi), Cargo, Nvim_Plugins, Pipx, Fisher)"
-                sudo pacman -Syudd --noconfirm
+                echo "Full upgrade selected (Yay, Ya(Yazi), Cargo, Nvim_Plugins, Pipx, Fisher)"
+                #sudo pacman -Syudd --noconfirm
                 #yay -Suadd --sudoloop --cleanafter --answeredit None --answerdiff None --answerclean None --save
-                and yay -Sua
+                yay -Syudd
                 and ya pkg upgrade
                 and nvim --headless "+Lazy! update" +qa
                 and cargo install-update -a
