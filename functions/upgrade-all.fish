@@ -11,8 +11,8 @@ function upgrade-all
             case -A
                 echo "Full upgrade selected (Yay, Ya(Yazi), Cargo, Nvim_Plugins, Pipx, Fisher)"
                 #NOTE: Run this once to to save to config file.
-                #yay -Syudd --sudoloop --cleanafter --answeredit None --answerdiff None --answerclean None --noconfirm --save
-                yay -Syudd
+                yay -Syudd --sudoloop --cleanafter --answeredit None --answerdiff None --answerclean None --noconfirm
+                #yay -Syudd
                 and ya pkg upgrade
                 and nvim --headless "+Lazy! update" +qa
                 and cargo install-update -a
